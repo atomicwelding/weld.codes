@@ -1,0 +1,65 @@
+html,
+body {
+    height: 100%;
+}
+
+hr {
+    border: 1px dashed black;
+    width: 80%;
+
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: black;
+}
+
+p {
+    text-align: center;
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#container>#main {
+    font-family: Roboto;
+    --main-size: 80vh;
+    width: var(--main-size);
+    height: var(--main-size);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container>#main>h3 {
+    margin: 0;
+}
+
+#container>#main>#avatar {
+    width: calc(var(--main-size)/4);
+    height: calc(var(--main-size)/4);
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.link {
+    margin-left: 10px;
+}
+
+.link>img {
+    width: calc(var(--main-size)/20);
+    height: calc(var(--main-size)/20);
+
+}
+
+.link:hover {
+    border-bottom: 2px solid aqua;
+}
